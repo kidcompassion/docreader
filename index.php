@@ -25,10 +25,10 @@ if ($zip)
     if ( zip_entry_name($zip_entry) == 'word/document.xml'):
     if (zip_entry_open($zip, $zip_entry))
       {
-      echo "File Contents:<br/>";
+      echo "File Contents:";
 
       $contents = zip_entry_read($zip_entry);
-      echo "$contents<br />";
+      echo '<p>' .$contents . '</p>';
       zip_entry_close($zip_entry);
       }
       endif;
