@@ -1,0 +1,4 @@
+docreader
+=========
+
+Reads docs
